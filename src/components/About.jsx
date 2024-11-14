@@ -3,7 +3,7 @@ import me from '../assets/me.jpg'
 
 const About = () => {
   return (
-    <section className="bg-[#0f0f14] pt-60 text-white py-16 px-8 md:px-24 lg:px-36 xl:px-48 flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-12">
+    <section className="bg-[#000000] pt-60 text-white py-16 px-8 md:px-24 lg:px-36 xl:px-48 flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-12">
       {/* Background Watermark Text
       <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
         <h1 className="text-[10rem] lg:text-[12rem] font-bold text-gray-800 opacity-10 select-none tracking-wide">
