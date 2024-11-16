@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Avatar from '../assets/Avatar.png'
 
 function Navbar() {
   return (
@@ -7,7 +8,7 @@ function Navbar() {
       {/* Profile Picture */}
       <div className="flex items-center space-x-3">
         <img
-          src="https://via.placeholder.com/40"  // Replace with actual image URL
+          src={Avatar}  // Replace with actual image URL
           alt="Profile"
           className="w-10 h-10 rounded-full object-cover"
         />
@@ -21,6 +22,11 @@ function Navbar() {
         {/* Link to Booking Page */}
         <Link to="/book" className="bg-lime-400 text-black font-bold px-4 py-2 rounded-full hover:bg-lime-500">
           BOOK
+        </Link>
+
+        {/* Admin Dashboard Button */}
+        <Link to="/admin" className="bg-blue-500 text-white font-bold px-4 py-2 rounded-full hover:bg-blue-600">
+          Admin Dashboard
         </Link>
       </div>
     </nav>

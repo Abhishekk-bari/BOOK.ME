@@ -4,8 +4,8 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import WorkGallery from './components/Work';
-import Gear from './components/Gear';
 import BookingPage from './components/BookingPage'; // Import the new booking page
+import AdminDashboard from './components/Dashboard/AdminDashboard';
 
 function App() {
   return (
@@ -18,10 +18,10 @@ function App() {
               <Home />
               <About />
               <WorkGallery />
-              {/* <Gear /> */}
             </>
           } />
-          <Route path="/book" element={<BookingPage />} /> {/* Route for Booking Page */}
+          <Route path="/book" element={<BookingPage />} />
+          <Route path="/admin" element={<AdminDashboard />} />
         </Routes>
       </div>
     </Router>
